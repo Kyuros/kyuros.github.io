@@ -1,4 +1,5 @@
 I am currently a Ph.D. student at the University of Florida J. Crayton Pruitt Family Department of Biomedical Engineering. I am driven by my fascination in coding and problem solving and want to develop the tools to unravel the intricacies in the brain. My work with [Dr. Ruogu Fang's SMILE Lab](https://lab-smile.github.io/index.html) involves machine learning and neuroscience focusing on understanding and predicting neural connections. My recent studies include classifying movement with functional magnetic resonance imaging and understanding spinal cord stimulation through electroencephalography.
+<br><br>
 
 ## Education
 **University of Florida, Gainesville, FL**, Ph.D. student in Biomedical Engineering
@@ -6,6 +7,7 @@ Smart Medical Information Learning and Evaluation Lab, Aug 2019 - Present.
 
 **University of Florida, Gainesville, FL**, B.S. in Biomedical Engineering
 Imaging & Medical Physics Specialization, Jan 2017 - May 2019.
+<br><br>
 
 ## Conference & Workshop Publications
 **Conference Poster Presentations**
@@ -16,6 +18,7 @@ Imaging & Medical Physics Specialization, Jan 2017 - May 2019.
 **Other Poster Presentations**
 1. **Kyle See**, Rachel Ho, Stephen Coombes PhD, Ruogu Fang PhD, "Predicting Short-term and Long-term Effects of Spinal Cord Stimulation", Pruitt Research Day, Gainesville, FL, 20 Nov 2020.
 2. **Kyle S.**, Rachel J., Stephen C., Ruogu F. "TL1 Team Approach to Predicting Pain from EEG: Understanding Chronic Low Back Pain Status from Resting Electroencephalography using Artificial Intelligence" MD-PhD & CTSI Research Day, University of Florida, Gainesville, FL, 15 May 2020.
+<br><br>
 
 ## Research Experiences
 - **Graduate Research Assistant**, Smart Medical Informatics Learning and Evaluation (SMILE) Lab, Aug 2019 - Present
@@ -27,11 +30,13 @@ Imaging & Medical Physics Specialization, Jan 2017 - May 2019.
 - **Research Experiences for Undergraduates (NSF REU #1564892)**, Smart Medical Informatics Learning and Evaluation (SMILE) Lab, Nov 2017 - May 2018
   - Developed classification models in autoimmune disease analytics to differentiate diseases with overlapping symptoms and characteristics.
   - Collaborated with medical professionals to address current autoimmune disease diagnosis.
+<br><br>
 
 ## Teaching Experiences
 - **Supervised Teaching Student**, Computer Applications for Biomedical Engineering, Jan 2021 - Present.
 - **Teaching Assistant**, Computer Applications for Biomedical Engineering, Aug 2018 - May 2019.
 - **Teaching Assistant**, Computer Programming for Engineers, Aug 2017 - May 2018.
+<br><br>
 
 ## Honors & Awards
 - NIH CTSI TL1 Predoctoral Fellowship, Spring 2020
