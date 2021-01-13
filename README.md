@@ -1,10 +1,10 @@
 I am currently a Ph.D. student at the University of Florida J. Crayton Pruitt Family Department of Biomedical Engineering. I am driven by my fascination in coding and problem solving and want to develop the tools to unravel the intricacies in the brain. My work with [Dr. Ruogu Fang's SMILE Lab](https://lab-smile.github.io/index.html) involves machine learning and neuroscience focusing on understanding and predicting neural connections. My recent studies include classifying movement with functional magnetic resonance imaging and understanding spinal cord stimulation through electroencephalography.
 
 ## Education
-**University of Florida, Gainesville, FL** Ph.D. student in Biomedical Engineering
+**University of Florida, Gainesville, FL**, Ph.D. student in Biomedical Engineering
 Smart Medical Information Learning and Evaluation Lab, Aug 2019 - Present.
 
-**University of Florida, Gainesville, FL** B.S. in Biomedical Engineering
+**University of Florida, Gainesville, FL**, B.S. in Biomedical Engineering
 Imaging & Medical Physics Specialization, Jan 2017 - May 2019.
 
 ## Conference & Workshop Publications
