@@ -1,0 +1,118 @@
+/* styles.css */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.bg-img {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    background-image: url("../img/machine-learning.jpg");
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/*The .kbs title on navbar*/
+
+.navbar {
+    width: 100%;
+    position:fixed;
+    padding: 12px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    font-size: 18px;
+}
+
+#logo {
+    display: inline-block;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+
+    /* Centering Text */
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.highlighted {
+    color: red;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/*About Section Cards*/
+.about-section {
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.about-card {
+    width: 50%;
+    border: 1px solid;
+    padding: 50px;
+    font-size:1.5rem;
+    height: 500px;
+}
+
+.card-1 {
+    font-size: 1.5rem
+}
+
+
+
+.text {
+    padding: 20px;
+}
+
+
+
+/*Font Related Stuff*/
+.font-weight-light {
+    font-weight: 400 !important;
+}
+
+.box {
+    display: block;
+    margin-bottom: 50px;
+    border:1px solid;
+    width: 3rem;
+}
