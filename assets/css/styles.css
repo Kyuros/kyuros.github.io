@@ -9,6 +9,14 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
+p {
+    font-size: 16px;
+}
+
+
+/*#################
+ Navbar and Banner
+#################*/
 .bg-img {
     position: relative;
     width: 100%;
@@ -17,12 +25,6 @@
     background-position:left;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
 }
 
 /*The .kbs title on navbar*/
@@ -77,12 +79,12 @@
     width: 100%;
 }
 
-/*About Section Cards*/
+/*###################
+ About Section Cards
+###################*/
 .about-section {
     display: flex;
     justify-content: space-evenly;
-
-    
 }
 
 .about-card {
@@ -97,20 +99,37 @@
     font-size: 1.5rem
 }
 
+/*##############
+ Resume Section
+##############*/
 
-
-.text {
-    padding: 20px;
+.resume-section {
+    padding: 20px 10%;
 }
 
+.resume p {
+    padding:0px;
+}
 
+/*################
+ Timeline Section
+################*/
+
+.timeline-section {
+    padding: 20px 10%;
+    background:whitesmoke;
+}
+
+.timeline-section p {
+    padding: 5px;
+}
 
 /*Font Related Stuff*/
 .font-weight-light {
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
-.box {
+.box-spacing {
     display: block;
     margin-bottom: 50px;
     border:1px solid;
