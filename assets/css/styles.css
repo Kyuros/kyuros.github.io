@@ -14,7 +14,7 @@ p {
 }
 
 /*Forces max width and has background*/
-.about-section, .experience-section, .timeline-section{
+.about-section, .experience-section, .post-section, .timeline-section{
     max-width: 1250px;
     margin: 0 auto;
     padding: 0px 20px;
@@ -261,6 +261,58 @@ button:hover {
     .about-section {
         flex-direction: column;
     }
+}
+
+/*############
+ Post Section
+############*/
+.post-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid;
+    min-width: 70%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.post-image {
+    flex: 1;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    object-fit: contain;
+    display: block;
+}
+
+.post-details {
+    flex: 3;
+}
+
+.read-more {
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .post {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        max-width: 100%;
+        min-height: 500px;
+    }
+    .post-image img {
+        height: 70%; /* Allow the image to resize for smaller screens */
+    }
+
 }
 
 /*################
