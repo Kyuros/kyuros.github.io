@@ -25,6 +25,20 @@ body {
     background-color:beige;
 }
 
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 /*#################
  Navbar and Banner
@@ -189,24 +203,37 @@ body {
 ##############*/
 
 .experience-section h1{
-    text-align: center;
-    padding: 50px;
+    text-align: left;
+    padding: 40px 0 0 40px;
 }
 
-.experience-cards {
+.experience-cards { /*Just to organize the education and timeline boxes properly*/
     display: flex;
-    
     justify-content: center;
+    margin-top: 20px;
 }
 
 .experience-card {
+    text-align: left;
     display: inline-block;
     width: 100%; /* Adjust the width of the cards as needed */
     border: 1px solid #dee2e6; /* Add border as needed */
     padding: 20px; /* Add padding for spacing */
     margin: 0 10px 20px; /* Add margin between cards */
     box-sizing: border-box;
+    max-height: 580px;
+    flex: 1.5;
+}
 
+.exp-2 {
+    flex: 2;
+    overflow-y: auto;
+    text-indent: -2.6em;
+    padding-left: 3.6em;
+}
+
+.exp-2 p {
+    padding-top: 15px;
 }
 
 .education {
@@ -220,10 +247,15 @@ body {
 @media (max-width: 768px) {
     .experience-cards {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .experience-card {
         width: auto;
+    }
+
+    .exp-1 {
+        overflow-y: auto;
     }
 
     .about-section {
@@ -245,6 +277,14 @@ body {
 }
 
 /*Font Related Stuff*/
+.font-title {
+    font-size: 20px;
+}
+
+.font-subtitle {
+    padding: 5px 0 10px 0;
+}
+
 .font-weight-light {
     font-weight: 400;
 }
@@ -254,4 +294,13 @@ body {
     margin-bottom: 20px;
     border: 1px solid;
     width: 3rem;
+}
+
+.box-spacing-light {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    width: 15rem;
+    
 }
