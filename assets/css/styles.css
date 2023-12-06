@@ -13,9 +13,11 @@ p {
     font-size: 16px;
 }
 
-.about-section, .resume-section, .timeline-section{
-    max-width: 1200px;
+/*Forces max width and has background*/
+.about-section, .experience-section, .timeline-section{
+    max-width: 1250px;
     margin: 0 auto;
+    padding: 0px 20px;
     background-color:white;
 }
 
@@ -141,17 +143,17 @@ body {
     margin-right: -35px;
 }
 
-.card-1 {
+.about-1 {
     flex: 1;
     display: flex;
     align-items:center;
 }
 
-.card-2 {
+.about-2 {
     flex: 3;
 }
 
-.card-3 {
+.about-3 {
     flex: 2;
     border-left: 1px solid;
     border-color: #dee2e6;
@@ -169,6 +171,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .about-card {
+        border:None;
+    }
+
     .about-card img {
         margin: auto;
     }
@@ -179,15 +185,50 @@ body {
 }
 
 /*##############
- Resume Section
+ Experience Section
 ##############*/
 
-.resume-section {
-    padding: 20px 40px;
+.experience-section h1{
+    text-align: center;
+    padding: 50px;
+}
+
+.experience-cards {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.experience-card {
+    display: inline-block;
+    width: 100%; /* Adjust the width of the cards as needed */
+    border: 1px solid #dee2e6; /* Add border as needed */
+    padding: 20px; /* Add padding for spacing */
+    margin: 0 10px 20px; /* Add margin between cards */
+    box-sizing: border-box;
+
+}
+
+.education {
+    font-size: 10px;
 }
 
 .resume p {
     padding:0px;
+}
+
+@media (max-width: 768px) {
+    .experience-cards {
+        flex-wrap: wrap;
+    }
+
+    .experience-card {
+        width: auto;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
 }
 
 /*################
