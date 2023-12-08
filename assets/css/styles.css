@@ -40,6 +40,12 @@ button:hover {
     background-color: #45a049;
 }
 
+@media (max-width: 768px) {
+    .about-section, .experience-section, .post-section, .timeline-section{
+        min-width: 0;
+    }
+}
+
 /*#################
  Navbar and Banner
 #################*/
@@ -116,7 +122,7 @@ button:hover {
     width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navbar {
         justify-content: center; /* Center the items */
         flex-wrap: nowrap; /* Prevent wrapping onto a new line */
@@ -245,13 +251,16 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
     .experience-cards {
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
+        margin-right:60px;
     }
 
     .experience-card {
-        width: auto;
+        width: 100%;
     }
 
     .exp-1 {
@@ -283,13 +292,15 @@ button:hover {
 
 .post-image {
     flex: 1;
+    overflow: hidden;
 }
 
 .post-image img {
-    width: 100%;
+    width: auto;
+    max-width: 120%;
     height: 100%;
     margin-left: 0px;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
 }
 
@@ -306,11 +317,19 @@ button:hover {
 @media (max-width: 768px) {
     .post {
         flex-direction: column; /* Stack items vertically for smaller screens */
-        max-width: 100%;
+        max-width: 80%;
         min-height: 500px;
     }
+
+    .post-image {
+        height:80%;
+        overflow: hidden;
+    }
+
     .post-image img {
-        height: 70%; /* Allow the image to resize for smaller screens */
+        height: 100%; /* Allow the image to resize for smaller screens */
+        width: 100%;
+        object-fit:cover;
     }
 
 }
