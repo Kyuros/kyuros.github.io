@@ -17,19 +17,17 @@
     <!--###############################-->
     <div class="bg-img">
         <nav class="navbar">
-            <a href="#" id="logo">.kbs</a>
-            <a href="index.html" class="active">About Me</a>
-            <a href="#">Research</a>
-            <a href="#">Posts</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <a href="index.html", class="navbar-link", id="logo">.kbs</a>
+            <a href="#about", class="navbar-link", id="aboutLink" class="active">About Me</a>
+            <a href="#experiences", class="navbar-link", id="experiencesLink">Experiences</a>
+            <a href="#posts", class="navbar-link", id="postsLink">Posts</a>
         </nav>
     </div>
 
     <!--####################-->
     <!--About Me Information-->
     <!--####################-->
-    <div class="about-section">
+    <div class="about-section" id="about">
         <!--About Me Info-->
         <div class="about-card about-1">
             <img src="assets/img/profile.jpeg" alt="Profile Picture">
@@ -53,8 +51,13 @@
             <p><b>GitHub: </b>https://github.com/Kyuros</p>
             <p><b>ORCiD: </b>https://orcid.org/0000-0003-4180-0963</p>
             <div class="icons">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-linkedin"></i>
+                <a href="https://github.com/Kyuros" target="_blank">
+                    <i class="fab fa-github" style="color: black;"></i>
+                </a>
+                <a href="www.linkedin.com/in/kyle-see-131695152" target="_blank">
+                    <i class="fab fa-linkedin" style="color: black;"></i>
+                </a>
+                
             </div>
             <a href="path/to/your-resume.pdf" download="kylebsee2023.pdf">
                 <button>Download CV</button>
@@ -65,7 +68,7 @@
     <!--##################-->
     <!--Experience Section-->
     <!--##################-->
-    <div class="experience-section">
+    <div class="experience-section" id="experiences">
         <h1 class="font-weight-light"><b>My Experience</b>
         <div class="experience-cards">
             <div class="experience-card exp-1">
@@ -103,7 +106,7 @@
     <!--#############-->
     <!--Posts Section-->
     <!--#############-->
-    <div class="post-section">
+    <div class="post-section" id="posts">
         <div class="post post-1">
             <div class="post-image">
                 <img src="/assets/img/post-rectangle-large.jpg" alt="Post1 Image">
@@ -112,16 +115,27 @@
                 <h3 class="font-title">Post Title 1</h3>
                 <p>Author Name</p>
                 <p>Description and stuff</p>
-                <a href="#" class="read-more">Read More >></a>
+                <a href="" class="read-more">Read More >></a>
+            </div>
+        </div>
+        <div class="post post-2">
+            <div class="post-image">
+                <img src="/assets/img/post-square.jpg" alt="Post1 Image">
+            </div>
+            <div class="post-details">
+                <h3 class="font-title">Post Title 1</h3>
+                <p>Author Name</p>
+                <p>Description and stuff</p>
+                <a href="" class="read-more">Read More >></a>
             </div>
         </div>
     </div>
 
 
-    <!--################-->
-    <!--Timeline Section-->
-    <!--################-->
-    <div class="timeline-section">
+    <!--###########-->
+    <!--End Section-->
+    <!--###########-->
+    <div class="end-section">
         
         <p>11/03/2021 - Published a paper in NeuroImage entitled "Unraveling somatotopic organization in the human brain using machine learning and adaptive supervoxel-based parcellations" [<a href="https://www.sciencedirect.com/science/article/pii/S1053811921009824">Link</a>].</p>
         <p>01/25/2021 - Joint paper with Rachel Ho on "TL1 Team Approach to Predicting Response to Spinal Cord Stimulation for Chronic Low Back Pain" accepted by <a href="https://www.actscience.org/Translational-Science">Translational Science 2021</a>!</p>
@@ -151,5 +165,58 @@
     
 </body>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get all div elements and navbar links
+        const divs = document.querySelectorAll('div[id]');
+        const navbarLinks = document.querySelectorAll('.navbar-link');
+
+        // Function to smooth scroll with offset
+        function smoothScroll(target) {
+            const offset = document.querySelector('.navbar').offsetHeight;
+            const targetPosition = document.querySelector(target).offsetTop - offset;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to check which div is in view
+        function updateActiveSection() {
+            let isInView = false;
+
+            divs.forEach((div) => {
+                const rect = div.getBoundingClientRect();
+                isInView = rect.top <= 50 && rect.bottom >= 50;
+
+                if (isInView) {
+                    // Remove active class from all links
+                    navbarLinks.forEach((link) => {
+                        link.classList.remove('active');
+                    });
+
+                    // Add active class to the corresponding link
+                    document.getElementById(`${div.id}Link`).classList.add('active');
+                }
+            });
+        }
+
+        // Event listener for scrolling
+        window.addEventListener('scroll', updateActiveSection);
+
+        // Event listener for clicking on navbar links
+        navbarLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const target = link.getAttribute('href');
+                smoothScroll(target);
+            });
+        });
+
+        // Initial check on page load
+        updateActiveSection();
+    });
+</script>
 
 </html>
