@@ -14,7 +14,7 @@ p {
 }
 
 /*Forces max width and has background*/
-.about-section, .experience-section, .post-section, .timeline-section{
+.about-section, .experience-section, .post-section, .end-section, .section-title{
     max-width: 1250px;
     margin: 0 auto;
     padding: 0px 20px;
@@ -41,7 +41,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .about-section, .experience-section, .post-section, .end-section {
+    .about-section, .experience-section, .post-section, .end-section .section-title{
         min-width: 0;
     }
 }
@@ -151,9 +151,13 @@ button:hover {
 .about-card {
     border-bottom: 1px solid;
     border-color: #dee2e6;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     padding: 20px 40px;
     
+}
+
+.about-card h3{
+    font-size: 1.5rem;
 }
 
 .about-card img {
@@ -208,15 +212,10 @@ button:hover {
  Experience Section
 ##############*/
 
-.experience-section h1{
-    text-align: left;
-    padding: 40px 0 0 40px;
-}
-
-.experience-cards { /*Just to organize the education and timeline boxes properly*/
+.experience-section { /*Just to organize the education and timeline boxes properly*/
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    padding: 0 80px;
 }
 
 .experience-card {
@@ -228,7 +227,11 @@ button:hover {
     margin: 0 10px 20px; /* Add margin between cards */
     box-sizing: border-box;
     max-height: 580px;
-    flex: 1.5;
+    flex: 1;
+}
+
+.experience-card h3{
+    font-size: 1.5rem;
 }
 
 .exp-2 {
@@ -236,6 +239,10 @@ button:hover {
     overflow-y: auto;
     text-indent: -2.6em;
     padding-left: 3.6em;
+}
+
+.exp-2, .box-spacing {
+    text-indent: 0;
 }
 
 .exp-2 p {
@@ -252,11 +259,11 @@ button:hover {
 
 @media (max-width: 768px) {
 
-    .experience-cards {
+    .experience-section {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        margin-right:60px;
+        padding: 0 50px;
     }
 
     .experience-card {
@@ -267,9 +274,10 @@ button:hover {
         overflow-y: auto;
     }
 
-    .about-section {
-        flex-direction: column;
+    .exp-2 {
+        padding-left: 20px;
     }
+
 }
 
 /*############
@@ -289,6 +297,7 @@ button:hover {
     min-width: 70%;
     height: 200px;
     box-sizing: border-box;
+    max-width: 10%;
 }
 
 .post-image {
@@ -310,6 +319,10 @@ button:hover {
     margin: 20px;
 }
 
+.post-details p, a{
+    padding: 5px 0;
+}
+
 .read-more {
     display: inline-block;
     color: red;
@@ -320,6 +333,7 @@ button:hover {
     .post {
         flex-direction: column; /* Stack items vertically for smaller screens */
         max-width: 80%;
+        min-width: 80%;
         min-height: 500px;
     }
 
@@ -333,20 +347,17 @@ button:hover {
         width: 100%;
         object-fit:cover;
     }
-
 }
 
-/*################
- Timeline Section
-################*/
+/*###########
+ End Section
+###########*/
 
-.timeline-section {
-    padding: 20px 10%;
-    background:whitesmoke;
-}
-
-.timeline-section p {
-    padding: 5px;
+.end-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
 }
 
 /*Font Related Stuff*/
@@ -367,6 +378,8 @@ button:hover {
     margin-bottom: 20px;
     border: 1px solid;
     width: 3rem;
+    margin-right: auto;
+    margin-left: 0;
 }
 
 .box-spacing-light {
@@ -374,6 +387,27 @@ button:hover {
     margin-top: 10px;
     margin-bottom: 20px;
     border: 1px solid #dee2e6;
-    width: 15rem;
-    
+    width: 15rem;   
+}
+
+.section-title {
+    padding: 40px 0;
+    text-align: left;
+    text-indent: 100px;
+}
+
+.section-title p {
+    padding-top: 10px;
+}
+
+.title-highlight {
+    color:cornflowerblue;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        text-align: center;
+        text-indent: 0;
+        padding: 80px;
+    }
 }
