@@ -14,7 +14,7 @@ p {
 }
 
 /*Forces max width and has background*/
-.about-section, .experience-section, .post-section, .end-section, .section-title{
+.about-section, .experience-section, .post-section, .blog-section, .end-section, .section-title{
     max-width: 1250px;
     margin: 0 auto;
     padding: 0px 20px;
@@ -349,6 +349,63 @@ button:hover {
     }
 }
 
+/*############
+ Blog Section
+############*/
+
+.blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    min-width: 70%;
+    height: auto;
+    box-sizing: border-box;
+    max-width: 10%;
+}
+
+.blog h1.center-text {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    border-bottom: 0.5px solid;
+    border-color: #dee2e6;
+
+}
+
+.blog h2.title {
+    font-size: 30px;
+    border-bottom: 0.5px solid;
+    border-color: #dee2e6;
+    padding-bottom: 10px;
+}
+
+.blog p {
+    padding-bottom: 20px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+.blog ul {
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.blog li {
+    padding-bottom: 5px;
+}
+
+.blog img {
+    padding-bottom: 20px;
+}
+
 /*###########
  End Section
 ###########*/
@@ -400,6 +457,7 @@ button:hover {
     padding-top: 10px;
 }
 
+/* Used to simply color the second half of titles */
 .title-highlight {
     color:cornflowerblue;
 }
