@@ -226,12 +226,20 @@ button:hover {
     padding: 20px; /* Add padding for spacing */
     margin: 0 10px 20px; /* Add margin between cards */
     box-sizing: border-box;
-    max-height: 580px;
+    max-height: 700px;
     flex: 1;
 }
 
 .experience-card h3{
     font-size: 1.5rem;
+}
+
+.exp-1 {
+    overflow-y: auto;
+}
+
+.exp-1, .box-spacing {
+    text-indent: 0;
 }
 
 .exp-2 {
@@ -387,10 +395,20 @@ button:hover {
     padding-bottom: 10px;
 }
 
+.blog h2 {
+    padding-bottom: 10px;
+}
+
 .blog p {
     padding-bottom: 20px;
     text-align: justify;
     line-height: 1.4em;
+}
+
+.blog blockquote{
+    border-left: 4px solid #def2e5;
+    padding: 10px;
+    margin: 0px 10px 20px 0px;
 }
 
 .blog ul {
@@ -422,8 +440,14 @@ button:hover {
     font-size: 20px;
 }
 
-.font-subtitle {
-    padding: 5px 0 10px 0;
+.font-location {
+    padding: 5px 0 5px 0;
+}
+
+
+.font-position { /*Used for position like "Ph.D. in Biomedical Engineering"*/
+    padding-bottom: 5px;
+    color:darkcyan;
 }
 
 .font-weight-light {
@@ -444,7 +468,7 @@ button:hover {
     margin-top: 10px;
     margin-bottom: 20px;
     border: 1px solid #dee2e6;
-    width: 15rem;   
+    width: 100%;   
 }
 
 .section-title {
